@@ -18,8 +18,7 @@ app.use(cors({
 app.use(bodyParser.json());
 
 mongoose.connect('mongodb+srv://yashnathani455:BInPGc3z6cZiknqD@cluster0.0mbbor9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+  
 });
 
 const db = mongoose.connection;
