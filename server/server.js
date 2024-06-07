@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000;
 const jwtSecret = 'fasefraw4r5r3wq45wdfgw34twdfg';
 
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'https://volunteer-recruitment-1n8d.vercel.app/',
   credentials: true,
 }));
 app.use(bodyParser.json());
