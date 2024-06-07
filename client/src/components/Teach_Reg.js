@@ -18,7 +18,7 @@ function Teach_Reg() {
   const onSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/api/register_teacher', {
+      const response = await fetch('https://volunteer-recruitment.vercel.app/api/register_teacher', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
