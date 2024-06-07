@@ -25,7 +25,7 @@ function SignupForm() {
     e.preventDefault();
 
     try {
-      const response = await fetch(`http://localhost:5000/api/opportunities/${opportunityId}/signup`, {
+      const response = await fetch(`https://volunteer-recruitment.vercel.app/api/opportunities/${opportunityId}/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
