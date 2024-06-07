@@ -13,7 +13,7 @@ function AppliedOpportunities() {
   const fetchAppliedOpportunities = async () => {
     try {
       const token = localStorage.getItem('volunteertoken');
-      const response = await fetch('http://localhost:5000/api/volunteer/applied-opportunities', {
+      const response = await fetch('https://volunteer-recruitment.vercel.app/api/volunteer/applied-opportunities', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,
