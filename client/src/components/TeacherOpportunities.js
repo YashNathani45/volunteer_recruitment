@@ -9,7 +9,7 @@ function ViewOpportunities() {
       const token = localStorage.getItem('teachertoken'); // Assuming you store the token in localStorage
 
       try {
-        const response = await fetch("http://localhost:5000/api/opportunities", {
+        const response = await fetch("https://volunteer-recruitment.vercel.app/api/opportunities", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
